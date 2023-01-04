@@ -1,0 +1,15 @@
+modules:
+  jira:projectPage:
+    - key: customui-jira-hello-world-project-page
+      resource: main
+      resolver:
+        function: resolver
+      title: customUI-jira
+  function:
+    - key: resolver
+      handler: index.handler
+resources:
+  - key: main
+    path: static/hello-world/build
+app:
+  id: ari:cloud:ecosystem::app/6061b1fc-b3fa-4940-a4f9-82ec071d2205
