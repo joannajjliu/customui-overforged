@@ -61,3 +61,5 @@ https://medium.com/@pdx.lucasm/canvas-with-react-js-32e133c05258
 ## Make game with JS (sprite animation)
 
 https://www.youtube.com/watch?v=EYf_JwzwTlQ
+
+https://medium.com/dhiwise/reactjs-requestanimationframe-da2155706c36
