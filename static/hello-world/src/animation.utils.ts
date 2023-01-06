@@ -1,4 +1,4 @@
-import background from "./assets/background.png";
+import background from "./assets/design/office-level.png";
 import characters from "./assets/Characters_MV.png";
 
 export const backgroundImg = new Image();
