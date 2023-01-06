@@ -42,6 +42,17 @@ forge deploy
 forge install
 ```
 
+- If editing anything inside manifest.yml:
+
+```
+forge deploy
+
+// if updated permissions
+forge install --upgrade
+
+forge tunnel
+```
+
 ### Notes
 
 - Use the `forge deploy` command when you want to persist code changes.
