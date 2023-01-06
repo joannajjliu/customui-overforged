@@ -21,25 +21,33 @@ export const player = {
 };
 
 export const movePlayer = (ctx) => {
-  if (keys["ArrowUp"] && player.y > 100) {
-    player.y -= player.speed;
+  if (keys["ArrowUp"]) {
     player.frameY = 3;
-    player.moving = true;
+    if (player.y > 0) {
+      player.y -= player.speed;
+      player.moving = true;
+    }
   }
-  if (keys["ArrowDown"] && player.y < ctx.canvas.height - player.height) {
-    player.y += player.speed;
+  if (keys["ArrowDown"]) {
     player.frameY = 0;
-    player.moving = true;
+    if (player.y < ctx.canvas.height - player.height) {
+      player.y += player.speed;
+      player.moving = true;
+    }
   }
-  if (keys["ArrowRight"] && player.x < ctx.canvas.width - player.width) {
-    player.x += player.speed;
+  if (keys["ArrowRight"]) {
     player.frameY = 2;
-    player.moving = true;
+    if (player.x < ctx.canvas.width - player.width) {
+      player.x += player.speed;
+      player.moving = true;
+    }
   }
-  if (keys["ArrowLeft"] && player.x > 0) {
-    player.x -= player.speed;
+  if (keys["ArrowLeft"]) {
     player.frameY = 1;
-    player.moving = true;
+    if (player.x > 0) {
+      player.x -= player.speed;
+      player.moving = true;
+    }
   }
 };
 
