@@ -11,6 +11,7 @@ import {
 
 const Canvas = (props) => {
   const canvasRef = useRef(null);
+  const test;
 
   useEffect(() => {
     if (canvasRef.current) {
