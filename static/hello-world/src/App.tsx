@@ -13,7 +13,7 @@ function App() {
   return (
     <div>
       {data ? data : "Give me a minute..."}
-      {/* <Canvas /> */}
+      <Canvas />
     </div>
   );
 }
